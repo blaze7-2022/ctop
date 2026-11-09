@@ -46,7 +46,7 @@ Because NixOS handles libraries differently than traditional Linux distributions
 2. **Enter the Nix DevShell and compile:**
    ```fish
    nix develop
-   clang main.c -o ctop -lncursesw
+   clang main.c -o ctop   -O3   -flto   -fuse-ld=lld   -fomit-frame-pointer   -ffunction-sections   -fdata-sections   -Wl,--gc-sections   -Wall -Wextra -Wpedantic   -DNDEBUG   $(pkg-config --cflags --libs ncursesw)
 3. **Run the executable**
    ```fish
    ./ctop
