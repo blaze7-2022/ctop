@@ -5,6 +5,7 @@ A lightweight, interactive terminal-based system monitor written in C using `ncu
 ![C Language](https://img.shields.io/badge/Language-C-blue.svg)
 
 ---
+
 ## ⚠️ Disclaimer
 
 **This is a work in progress** Some features or metrics may be refined as development continues.
@@ -31,6 +32,7 @@ To compile and run this project, you will need:
 
 - The `ncursesw` development library (wide-character ncurses support)
 
+---
 
 ## 🚀 Building and Running (NixOS)
 
