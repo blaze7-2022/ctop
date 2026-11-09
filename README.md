@@ -3,6 +3,7 @@
 A lightweight, interactive terminal-based system monitor written in C using `ncursesw`. It provides real-time tracking of your CPU, RAM, Swap memory, and Network activity with a clean, box-based interface.
 
 ![C Language](https://img.shields.io/badge/Language-C-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ---
 
