@@ -411,9 +411,9 @@ int main(void) {
 
     attron(COLOR_PAIR(3));
     if (proc_active) {
-      mvprintw(1, 3, "SYSTEM MONITOR [Processes Active: Use j/k to scroll, Press Esc to exit]");
+      mvprintw(1, 3, "CTOP [Processes Active: Use Up/Down or j/k to scroll, Press Esc to exit]");
     } else {
-      mvprintw(1, 3, "SYSTEM MONITOR (Press Enter on Processes to scroll)");
+      mvprintw(1, 3, "CTOP");
     }
     attroff(COLOR_PAIR(3));
 
