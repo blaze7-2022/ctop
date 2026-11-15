@@ -32,6 +32,7 @@ To compile and run this project, you will need:
 - A C compiler (like `clang`)
 
 - The `ncursesw` development library (wide-character ncurses support)
+- `pkg-config`
 
 ---
 
@@ -41,13 +42,10 @@ Because NixOS handles libraries differently than traditional Linux distributions
 
 1. **Clone the repository and enter the directory:**
    ```fish
-   git clone [https://github.com/blaze7-2022/ctop.git](https://github.com/blaze7-2022/ctop.git)
+   git clone https://github.com/blaze7-2022/ctop.git
    cd ctop
 
-2. **Enter the Nix DevShell and compile:**
+2. **Compile and run**
    ```fish
-   nix develop
-   clang main.c -o ctop   -O3   -flto   -fuse-ld=lld   -fomit-frame-pointer   -ffunction-sections   -fdata-sections   -Wl,--gc-sections   -Wall -Wextra -Wpedantic   -DNDEBUG   $(pkg-config --cflags --libs ncursesw)
-3. **Run the executable**
-   ```fish
-   ./ctop
+   sudo make install
+   ctop
