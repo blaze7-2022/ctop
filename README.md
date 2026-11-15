@@ -41,11 +41,19 @@ To compile and run this project, you will need:
 Because NixOS handles libraries differently than traditional Linux distributions, standard compilation commands will not automatically locate the `ncursesw` headers. You can use the provided Nix development environment (`devShell`) to build and run **ctop**:
 
 1. **Clone the repository and enter the directory:**
+   
    ```fish
    git clone https://github.com/blaze7-2022/ctop.git
    cd ctop
 
-2. **Compile and run**
+2. **Enter devShell and compile**
+
    ```fish
+   nix develop
+   make
    sudo make install
-   ctop
+
+3. **Run**
+
+   The compiled binary should have now been installed to `/usr/local/bin`
+   Now you just need to run `ctop` to use it.
